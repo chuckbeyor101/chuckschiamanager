@@ -20,8 +20,8 @@ echo "-----Install Chia and add keys-----"
 cd ~/
 Sleep 1200
 git clone https://github.com/Chia-Network/chia-blockchain.git
-git pull https://github.com/Chia-Network/chia-blockchain.git
 cd ~/chia-blockchain
+git pull https://github.com/Chia-Network/chia-blockchain.git
 sh install.sh
 . ./activate
 chia init
