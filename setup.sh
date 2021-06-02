@@ -14,10 +14,10 @@ echo "Install SSH"
 sudo apt install openssh-server
 
 echo "Install Samba"
-sudo apt install samba -y
+sudo apt -y install samba
 
 echo "Install Chia and add keys"
-git clone https://github.com/Chia-Network/chia-blockchain.git -b latest
+git clone https://github.com/Chia-Network/chia-blockchain.git
 cd $HOME/chia-blockchain
 sh install.sh
 . ./activate
