@@ -17,7 +17,7 @@ sudo apt install openssh-server
 sudo apt install samba -y
 
 #Install Chia and add keys
-git clone https://github.com/Chia-Network/chia-blockchain.git -b latest --recurse-submodules
+git clone https://github.com/Chia-Network/chia-blockchain.git -b latest
 cd /home/$USERNAME/chia-blockchain
 sh install.sh
 . ./activate
