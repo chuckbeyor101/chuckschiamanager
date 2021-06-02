@@ -17,12 +17,10 @@ echo "-----Install Samba-----"
 sudo apt -y install samba
 
 echo "-----Install Chia and add keys-----"
-cd ~/
-Sleep 1200
 git clone https://github.com/Chia-Network/chia-blockchain.git
-cd ~/chia-blockchain
+cd chia-blockchain/
 git pull https://github.com/Chia-Network/chia-blockchain.git
 sh install.sh
 . ./activate
 chia init
-chia keys add -f ~/chiamanager/keys.txt
+chia keys add -f keys.txt
