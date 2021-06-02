@@ -2,24 +2,23 @@
 #sudo sed -i 's/ALL=(ALL:ALL) ALL/ALL=(ALL:ALL) NOPASSWD:ALL/g' /etc/sudoers
 #sudo sed -i 's/ALL=(ALL) ALL/ALL=(ALL) NOPASSWD:ALL/g' /etc/sudoers
 
-echo "Update System"
+echo "-----Update System------"
 sudo apt update
 sudo apt upgrade -y
 sudo apt install git -y
 
-echo "Install iftop to monitor network connections"
+echo "-----Install iftop to monitor network connections-----"
 sudo apt-get install iftop -y
 
-echo "Install SSH"
+echo "-----Install SSH-----"
 sudo apt install openssh-server
 
-echo "Install Samba"
+echo "-----Install Samba-----"
 sudo apt -y install samba
 
-echo "Install Chia and add keys"
-echo ~/
+echo "-----Install Chia and add keys-----"
 cd ~/
-git clone https://github.com/Chia-Network/chia-blockchain.git
+git pull https://github.com/Chia-Network/chia-blockchain.git
 cd ~/chia-blockchain
 sh install.sh
 . ./activate
