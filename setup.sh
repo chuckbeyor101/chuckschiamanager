@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #change Permissions (Comment out these 2 lines for higher security)
 #sudo sed -i 's/ALL=(ALL:ALL) ALL/ALL=(ALL:ALL) NOPASSWD:ALL/g' /etc/sudoers
 #sudo sed -i 's/ALL=(ALL) ALL/ALL=(ALL) NOPASSWD:ALL/g' /etc/sudoers
